@@ -29,7 +29,7 @@ export class DocumentUploaderScreen extends PureComponent {
   render() {
     return (
       <View>
-        <Text onPress={() => this.openFilepicker()}>Hello world!</Text>
+        <Text onPress={() => this.openFilepicker()}>UPLOAD SOMETHING</Text>
       </View>
     );
   }
