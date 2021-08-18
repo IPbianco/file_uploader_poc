@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 import DocumentPicker from 'react-native-document-picker';
 
@@ -28,11 +28,24 @@ export class DocumentUploaderScreen extends PureComponent {
 
   render() {
     return (
-      <View>
-        <Text onPress={() => this.openFilepicker()}>UPLOAD SOMETHING</Text>
+      <View style={styles.mainContainer}>
+        <Text style={styles.text} onPress={() => this.openFilepicker()}>
+          UPLOAD SOMETHING
+        </Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  mainContainer: {
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 20,
+  },
+});
 
 export default DocumentUploaderScreen;
