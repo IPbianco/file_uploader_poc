@@ -8,7 +8,7 @@ export class DocumentUploaderScreen extends PureComponent {
   async openFilepicker() {
     try {
       const res = await DocumentPicker.pick({
-        type: [DocumentPicker.types.images],
+        type: [DocumentPicker.types.images, DocumentPicker.types.pdf],
       });
       const {uri, type, name, size} = res[0];
       uploadFile({uri, type, name, size});
