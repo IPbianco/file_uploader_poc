@@ -30,3 +30,6 @@ For iOS:
 For Android:
 
 8) `npx react-native run-android` (Runs the app)
+
+<img width="210" alt="Screenshot 2021-08-18 at 18 41 57" src="https://user-images.githubusercontent.com/26870666/129973321-e65df59f-fb03-4660-94a9-5a2c5a7e89d2.png">
+
